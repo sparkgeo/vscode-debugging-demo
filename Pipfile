@@ -9,6 +9,8 @@ black = "*"
 
 [packages]
 typer = "*"
+fastapi = "*"
+uvicorn = {extras = ["all"], version = "*"}
 
 [requires]
 python_version = "3.8"
