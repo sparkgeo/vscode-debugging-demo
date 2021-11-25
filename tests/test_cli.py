@@ -1,5 +1,5 @@
 from cli import main
 
-def test_goodbye():
-    main.goodbye("Taco", True)
+def test_hello():
+    main.hello("TRump")
 

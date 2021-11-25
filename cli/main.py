@@ -3,8 +3,23 @@ import typer
 app = typer.Typer()
 
 
+BANNED_NAMES = [
+    "voldemort", "sauron", "trump", "r.kelly", "bill cosby"
+]
+
+
+def is_name_banned(name: str):
+    if name.lower() in BANNED_NAMES:
+        return True
+    return False
+
+
 @app.command()
 def hello(name: str):
+    
+    if is_name_banned(name):
+        raise ValueError("I cannot Speak this name")
+
     typer.echo(f"Hello {name}")
 
 

@@ -35,7 +35,7 @@ Click the install button.
 
 Python can be used for a very wide variety of uses, such as: scripting, data science, backend apis, and more. So there are many ways to use a debugger depending on what you are doing. Below will be some of the common scenarios.
 
-To run debugging, VS Code requires a `launch.json` which contains configuratoin on how to execute.
+To run debugging, VS Code requires a `launch.json` which contains configuratoin on how to execute. 
 
 ### Script, Single File, and General Navigation
 
@@ -92,8 +92,3 @@ Debugging will run an api server on localhost, and allow you to hit the api usin
 ## Docker Debugging
 
 This is an advanced debugging topic. This involves using `tasks.json` and `launch.json`. For the example here, there is a `Dockerfile` with the code from the repo. There are tasks created in `tasks.json` for building and running the container. The best way to set this up is to use the Command Palette `<Ctrl><Shift><P>` and find `Docker: Add Docker file to Workspace`. This will create a basic `Dockerfile` and configure `launch.json` and `task.json`. From there you can edit the Dockerfile as needed. Then you can run the debug session from the debug sidebar.
-
-- Conditional breakpoint
-- Log points
-- Console
-- Watch

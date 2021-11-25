@@ -11,6 +11,7 @@ black = "*"
 typer = "*"
 fastapi = "*"
 uvicorn = {extras = ["all"], version = "*"}
+requests = "*"
 
 [requires]
 python_version = "3.8"
